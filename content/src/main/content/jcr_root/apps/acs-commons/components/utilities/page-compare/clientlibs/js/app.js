@@ -19,8 +19,9 @@
  */
 /*global angular: false */
 
-angular.module('PageCompare', ['acsCoral'])
-.controller('MainCtrl', ['$scope', '$http', '$timeout', '$location',
+var pageCompareApp = angular.module('PageCompare', ['acsCoral']);
+
+pageCompareApp.controller('MainCtrl', ['$scope', '$http', '$timeout', '$location',
     function($scope, $http, $timeout, $location) {
 
         $scope.app = {
@@ -50,6 +51,9 @@ angular.module('PageCompare', ['acsCoral'])
 
         $scope.analyse = function() {
             var url = $scope.app.home;
+            if (window.location.pathname.substring(0, 4) === '/cqa') {
+                url = '/cqa' + url;
+            }
             url += "?path=" + $scope.app.resource;
             url += "&a=" + $scope.app.a;
             url += "&b=" + $scope.app.b;
@@ -61,4 +65,5 @@ angular.module('PageCompare', ['acsCoral'])
 
         $scope.init = function() {
         };
-    } ]);
+    } 
+]);
