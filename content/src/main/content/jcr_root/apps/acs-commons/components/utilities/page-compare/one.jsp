@@ -6,7 +6,7 @@
 <%@taglib prefix="fn" uri="http://java.sun.com/jsp/jstl/functions" %>
 
 <div>
-    <div class="version-entry type- line-${forStatus.index}"
+    <div class="version-entry elem-${line.state}"
          id="${versionEntry.uniqueName}-${evoCounter}">
         <div class="inner-version-entry depth-${versionEntry.depth} color-${line.state}">
             <span class="key"><c:out value="${versionEntry.name}"/>:</span>
