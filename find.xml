@@ -1,7 +1,7 @@
 <application>
   <component name="FindSettings">
-    <option name="customScope" value="Open Files" />
-    <option name="defaultScopeName" value="Open Files" />
-    <option name="SEARCH_SCOPE" value="Open Files" />
+    <option name="customScope" value="Directory '.../content/src/main/content/jcr_root/apps/acs-commons/components/utilities/page-compare [acs-aem-commons-content]'" />
+    <option name="defaultScopeName" value="Directory '.../content/src/main/content/jcr_root/apps/acs-commons/components/utilities/page-compare [acs-aem-commons-content]'" />
+    <option name="SEARCH_SCOPE" value="Directory '.../content/src/main/content/jcr_root/apps/acs-commons/components/utilities/page-compare [acs-aem-commons-content]'" />
   </component>
 </application>
